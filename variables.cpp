@@ -1,0 +1,21 @@
+#include "variables.h"
+	int Control_Box_Color=3;   // Light Green
+	int Drawing_Color=15;       // white 
+	int Box_Dis=16;
+	int Box_Width=101;
+	int top_1=40;
+	int left_1=1100+Box_Dis;
+	int right_1=left_1+Box_Width;
+	int bottom_1=90;
+	int top_2=top_1;
+	int bottom_2=bottom_1;
+	int left_2=left_1+117;
+	int right_2=right_1+117;
+	int box_L_left=1100+Box_Dis;
+	int box_L_top=40;
+	int box_L_bottom=90;
+	int box_L_right=left_1+Box_Width;
+	int box_R_left=left_1+117;
+	int box_R_top=top_1;
+	int box_R_bottom=bottom_1;
+	int box_R_right=right_1+117;
