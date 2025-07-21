@@ -39,19 +39,19 @@ This is the entry point of the application
 ![Instruction page](screenshots/Instruction.png)
 
 ### Drawings window
-- Drawing_1 **(F1 key)**
+- Yin-Yang **(F1 key)**
 ![First Drawing](screenshots/Drawing_1.png)
 
-- Drawing_2 **(F2 key)**
+- Piggy **(F2 key)**
 ![Second Drawing](screenshots/Drawing_2.png)
 
-- Drawing_3 **(F3 key)**
+- Car **(F3 key)**
 ![Third Drawing](screenshots/Drawing_3.png)
 
-- Drawing_4 **(F4 key)**
+- Yatch **(F4 key)**
 ![Fourth Drawing](screenshots/Drawing_4.png)
 
-- Drawing_5 **(F5 key)**
+- Rocket **(F5 key)**
 ![Fifth Drawing](screenshots/Drawing_5.png)
 
 ### Filling Drawings
