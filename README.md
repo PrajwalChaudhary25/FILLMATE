@@ -59,7 +59,6 @@ Pick up color from the **control box** on the right side using **R_click** and p
 
 ![Filling Colot](screenshots/Filling_color.png)
 
-## Demo Video
 Click here for [Demo Video](https://drive.google.com/file/d/1IS2EOAG1i33yGVBN3w_UDBpd32ktL9jQ/view?usp=sharing)
 
 ## Contributors
