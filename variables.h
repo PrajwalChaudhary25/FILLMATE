@@ -1,7 +1,6 @@
 // variables.h
 #ifndef VARIABLES_H
 #define VARIABLES_H
-
 extern int Control_Box_Color;   // Light Green
 extern int Drawing_Color;       // white 
 extern int Box_Dis;

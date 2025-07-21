@@ -6,7 +6,7 @@
     	rectangle(50,20,1050,600);
     	rectangle(50+1,20+1,1050-1,600-1);
     	rectangle(50+2,20+2,1050-2,600-2);
-    	setcolor(WHITE);
+    	setcolor(3);
         settextstyle(EUROPEAN_FONT,HORIZ_DIR,5);
         outtextxy(400,625, "FILL-MATE");
             	
@@ -17,10 +17,14 @@
 		rectangle(1100+2,20+2,1350-2,600-2);
 		
 	    //creators
-		setcolor(WHITE);
+		setcolor(3);
         settextstyle(EUROPEAN_FONT,HORIZ_DIR,2);
         outtextxy(1100,615, "Bhagirath Aryal(12)");
         outtextxy(1080,645, "Prajwal Chaudhary(28)");
+		
+		//setting background pattern
+		setfillstyle(LTSLASH_FILL,8);
+		floodfill(10,10,3);
 		
 		//drawing color holders
 		setcolor(Drawing_Color);
@@ -79,7 +83,7 @@
 	
 	
 	
-	void control_box::write_instructions()
+	void control_box::display_instructions()
 	{
 	// instruction
        setcolor(GREEN);
@@ -89,7 +93,7 @@
        settextstyle(4,HORIZ_DIR,1);
        outtextxy(box_L_left,box_L_top+320+105, "Colorpick-'Rclick'");
        outtextxy(box_L_left+20,box_L_top+320+130, "Relaunch-'F1'");
-       outtextxy(box_L_left+30,box_L_top+320+155, "Save-'Enter'");
+       outtextxy(box_L_left+37,box_L_top+320+155, "Esc-'Menu'");
        settextstyle(EUROPEAN_FONT,HORIZ_DIR,1);
        setcolor(GREEN);
        outtextxy(box_L_left+10,box_L_top+320+180,"----PATTERNS----");
@@ -102,7 +106,7 @@
 	{
 	    draw_control_box();
 		fill_color_holders();
-	    write_instructions();
+	    display_instructions();
 	}
      
         

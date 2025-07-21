@@ -3,40 +3,66 @@
 void drawings::first_drawing()
 {
 	setcolor(3);
-    circle(350+110,300-50,150);
-    circle(500+110,300-50,150);
-    circle(415+110,450-50,150);
-    circle(350+110,300-50,149);
-    circle(500+110,300-50,149);
-    circle(415+110,450-50,149);
-    circle(350+110,300-50,148);
-    circle(500+110,300-50,148);
-    circle(415+110,450-50,148);
-    setcolor(15);
+    circle(550,310,200);
+    circle(550,310,201);
+    circle(550,310,202);
+    
+    ellipse(550,310+100,90,-90,50,100);
+    ellipse(550,310+100,90,-90,51,101);
+    ellipse(550,310+100,90,-90,52,102);
+    
+    ellipse(550,310-100,-90,90,50,100);
+    ellipse(550,310-100,-90,90,51,101);
+	ellipse(550,310-100,-90,90,52,102);
+	
+    circle(550-50,310-100,50);
+    circle(550-50,310-100,51);
+    circle(550-50,310-100,52);
+    
+    circle(550+50,310+100,50);
+    circle(550+50,310+100,51);
+    circle(550+50,310+100,52);
 }
 
 
-void drawings::second_drawing()
+void drawings::second_drawing()//piggy
 {
     setcolor(3); 
-    circle(550,340,100);
-    circle(550,340,150);
-    circle(550,340,200);
-    circle(550,340,250);
-    circle(550,340,100-1);
-    circle(550,340,150-1);
-    circle(550,340,200-1);
-    circle(550,340,250-1);
-    circle(550,340,100-2);
-    circle(550,340,150-2);
-    circle(550,340,200-2);
-    circle(550,340,250-2);
-    line(550,242,550,438);
-    line(550-1,242,550-1,438);
-    line(550+1,242,550+1,438);
-    line(550-98,340,550+98,340);
-    line(550-98,340+1,550+98,340+1);
-    line(550-98,340-1,550+98,340-1);
+	ellipse(550,340,0,360,250,200);//body
+	ellipse(550,340,0,360,250-1,200-1);
+	ellipse(550,340,0,360,250-2,200-2);
+	
+	ellipse(440,280,0,360,30,50);//eyes-left
+	ellipse(440,280,0,360,30-1,50-1);
+	ellipse(440,280,0,360,30-2,50-2);
+	ellipse(440,304,0,360,20,26);//eyes-left-inner
+	ellipse(440,304,0,360,20-1,26-1);
+	ellipse(440,304,0,360,20-2,26-2);
+	ellipse(650,280,0,360,30,50);//eyes-right
+	ellipse(650,280,0,360,30-1,50-1);
+	ellipse(650,280,0,360,30-2,50-2);
+	
+	ellipse(650,304,0,360,20,26);//eyes-right-outer
+	ellipse(650,304,0,360,20-1,26-1);
+	ellipse(650,304,0,360,20-2,26-2);
+
+	
+	ellipse(550,430,0,360,90,55);//outernose
+	ellipse(550,430,0,360,90-1,55-1);
+	ellipse(550,430,0,360,90-2,55-2);
+	ellipse(505,430,0,360,15,30);//nosepore-left
+	ellipse(505,430,0,360,15-1,30-1);
+	ellipse(505,430,0,360,15-2,30-2);
+	ellipse(590,430,0,360,15,30);//nosepore-right
+	ellipse(590,430,0,360,15-1,30-1);
+	ellipse(590,430,0,360,15-2,30-2);
+	ellipse(430,104,0,360,40,60);//ear-left
+	ellipse(430,104,0,360,40-1,60-1);
+	ellipse(430,104,0,360,40-2,60-2);
+	ellipse(673,104,0,360,40,60);//ear-right
+	ellipse(673,104,0,360,40-1,60-1);
+	ellipse(673,104,0,360,40-2,60-2);
+	
 }
 
 
@@ -141,42 +167,127 @@ void drawings::fifth_drawing()
 {
 
 	setcolor(3);
-	int	points_R[8]={350,340,550,140,750,340,350,340};
-	drawpoly(4,points_R);
-	int	points_R1[8]={350+2,340-1,550+1,140+2,750-2,340-1,350+2,340-1};
-	drawpoly(4,points_R1);
-	int	points_R2[8]={350+3,340-2,550+2,140+3,750-3,340-2,350+3,340-2};
-	drawpoly(4,points_R2);
 	
-	int points_F[10]={380,340,380,540,720,540,720,340,380,340};
-	drawpoly(5,points_F);
-	int points_F1[10]={380+1,340+1,380+1,540-1,720-1,540-1,720-1,340+1,380+1,340+1};
-	drawpoly(5,points_F1);
-	int points_F2[10]={380+2,340+2,380+2,540-2,720-2,540-2,720-2,340+2,380+2,340+2};
-	drawpoly(5,points_F2);
+	//upper triangle
+    line(540,90,440,190);
+    line(540+1,90+1,440+1,190);
+    line(540+2,90+2,440+2,190);
+    line(540,90,640,190);
+    line(540-1,90+1,640-1,190);
+    line(540-2,90+2,640-2,190);
+    
+    //window upper
+    circle(540,270,30);
+    circle(540,270,30-1);
+    circle(540,270,30-2);
+    
+    //window lower
+    circle(540,370,30);
+    circle(540,370,30-1);
+    circle(540,370,30-2);
+    
+    //body
+    rectangle(440,190,640,480);
+	rectangle(440+1,190+1,640-1,480-1);
+	rectangle(440+2,190+2,640-2,480-2);
 	
-	line(520,540,520,340);
-	line(520-1,540,520-1,340);
-	line(520+1,540,520+1,340);
+	//base
+	int points_F10[8]={440,480 ,440-50,480+50, 640+50,480+50 ,640,480};
+	drawpoly(4,points_F10);
+	int points_F11[8]={440+1,480 ,440-50+1,480+50, 640+50-1,480+50 ,640-1,480};
+	drawpoly(4,points_F11);
+	int points_F12[8]={440+2,480 ,440-50+2,480+50, 640+50-2,480+50 ,640-2,480};
+	drawpoly(4,points_F12);
+	line(440-50-1,480+50+1, 640+50+1,480+50+1);
+	line(440-50-2,480+50+2, 640+50+2,480+50+2);
 	
-	line(530,540,530,340);
-	line(530-1,540,530-1,340);
-	line(530+1,540,530+1,340);
+	//wings-left
+	int points_F20[8]={440,260 ,440-50,285+50, 440-50,385+50 ,440,385};
+	drawpoly(4,points_F20);
+	int points_F21[8]={440,260+1 ,440-50,285+50+1, 440-50,385+50+1 ,440,385+1};
+	drawpoly(4,points_F21);
+	int points_F22[8]={440,260+2 ,440-50,285+50+2, 440-50,385+50+2 ,440,385+2};
+	drawpoly(4,points_F22);
+	line(440-50+1,285+50+1, 440-50+1,385+50-1);
+	line(440-50+2,285+50+2, 440-50+2,385+50-2);
 	
-	line(580,540,580,340);
-	line(580-1,540,580-1,340);
-	line(580+1,540,580+1,340);
+	//wings-right
+	int points_F30[8]={640,260 ,640+50,285+50, 640+50,385+50 ,640,385};
+	drawpoly(4,points_F30);
+	int points_F31[8]={640,260+1 ,640+50,285+50+1, 640+50,385+50+1,640,385+1};
+	drawpoly(4,points_F31);
+	int points_F32[8]={640,260+2 ,640+50,285+50+2, 640+50,385+50+2 ,640,385+2};
+	drawpoly(4,points_F32);
+	line(640+50-1,285+50+1, 640+50-1,385+50-1);
+	line(640+50-2,285+50+2, 640+50-2,385+50-2);
+}
+
+void drawings::main_menu()
+{
+	//outer box
+	setcolor(CYAN);
+	rectangle(435,150,895,590);
+	rectangle(435+1,150+1,895-1,590-1);
+	rectangle(435+2,150+2,895-2,590-2);
 	
-	line(570,540,570,340);
-	line(570+1,540,570+1,340);
-	line(570-1,540,570-1,340);
 	
-    rectangle(410,420,490,460);
-	rectangle(410+1,420+1,490-1,460-1);
-	rectangle(410+2,420+2,490-2,460-2);
+	//setting background pattern
+	setfillstyle(LTSLASH_FILL,8);
+	floodfill(10,10,CYAN);
 	
-	rectangle(610,420,690,460);
-	rectangle(610+1,420+1,690-1,460-1);
-	rectangle(610+2,420+2,690-2,460-2);
+	setcolor(3);
+	settextstyle(EUROPEAN_FONT,HORIZ_DIR,5);
+    outtextxy(500,160, "FILL-MATE");  
+	settextstyle(EUROPEAN_FONT,HORIZ_DIR,2);
+	outtextxy(455+100,240+20, "1. START");
+    outtextxy(455+100,300+40, "2. INSTRUCTIONS");
+    outtextxy(455+100,360+60, "3. EXIT");
+    
+    //menu controlboxes
+    setcolor(WHITE);
+    rectangle(460,250,540,290);
+    rectangle(460,330,540,370);
+    rectangle(460,410,540,450);
+    
+    setfillstyle(SOLID_FILL,RED);
+	floodfill(465,260,15);
+	setfillstyle(SOLID_FILL,BLUE);
+	floodfill(465,340,15);
+	setfillstyle(SOLID_FILL,GREEN);
+	floodfill(465,420,15);
+
+    setcolor(3);
+    settextstyle(EUROPEAN_FONT,HORIZ_DIR,2);
+	outtextxy(1100,615, "Bhagirath Aryal(12)");
+    outtextxy(1080,645, "Prajwal Chaudhary(28)");
+}
+
+void drawings::instructions()//represented by red color
+{
+	//outer box
+	setcolor(CYAN);
+	rectangle(435,150,895,590);
+	rectangle(435+1,150+1,895-1,590-1);
+	rectangle(435+2,150+2,895-2,590-2);
+	
+	//setting background pattern
+	setfillstyle(LTSLASH_FILL,8);
+	floodfill(10,10,CYAN);
+	
+	setcolor(RED);
+	settextstyle(EUROPEAN_FONT,HORIZ_DIR,4);
+    outtextxy(500,160, "INSTRUCTIONS");  
+	settextstyle(EUROPEAN_FONT,HORIZ_DIR,2);
+	outtextxy(455+10,240+20, "R_CLICK--Picks Color");
+    outtextxy(455+10,300+40, "L_CLICK--Fills Color");
+    outtextxy(455+10,360+60, "PATTERNS--Press Keys(F1-F5)");
+    setcolor(GREEN);
+    outtextxy(440+5,360+130, "ESC--RETURNS TO MAIN MENU");
+    
+    //menu controlboxes
+    setcolor(3);
+    settextstyle(EUROPEAN_FONT,HORIZ_DIR,2);
+	outtextxy(1100,615, "Bhagirath Aryal(12)");
+    outtextxy(1080,645, "Prajwal Chaudhary(28)");
 }
 
